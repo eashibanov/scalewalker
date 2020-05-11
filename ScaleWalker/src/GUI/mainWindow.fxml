@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@CSS/windowPane.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+   <children>
+      <Button fx:id="noiseGateButton" layoutX="292.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#setGate" prefHeight="40.0" prefWidth="115.0" stylesheets="@CSS/button.css" text="Set gate">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="startButton" layoutX="64.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#detect" prefHeight="40.0" prefWidth="115.0" stylesheets="@CSS/button.css" text="RECORD">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <TextField fx:id="text" layoutX="546.0" layoutY="39.0" prefHeight="39.0" prefWidth="200.0" text="Put note # here">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Button fx:id="fileButton" layoutX="179.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#openFile" prefHeight="40.0" prefWidth="115.0" stylesheets="@CSS/button.css" text="Play a MIDI">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="scaleButton" layoutX="407.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#setScale" prefHeight="40.0" prefWidth="115.0" stylesheets="@CSS/button.css" text="Set scale notes">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

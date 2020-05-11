@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@CSS/windowPane.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+   <children>
+      <Button fx:id="noiseGateButton" layoutX="353.0" layoutY="724.0" mnemonicParsing="false" onMouseClicked="#setGate" prefHeight="40.0" prefWidth="96.0" stylesheets="@CSS/button.css" text="Set gate" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="351.0" />
+      <Button fx:id="startButton" layoutX="330.0" layoutY="663.0" mnemonicParsing="false" onMouseClicked="#detect" prefHeight="40.0" prefWidth="142.0" stylesheets="@CSS/button.css" text="Start recording" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="328.0" />
+      <TextField fx:id="text" layoutX="326.0" layoutY="90.0" prefHeight="52.0" prefWidth="149.0" text="Put note # here" AnchorPane.leftAnchor="326.0" AnchorPane.rightAnchor="325.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="scaleButton" layoutX="481.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#setScale" prefHeight="52.0" prefWidth="119.0" stylesheets="@CSS/button.css" text="Set scale notes" AnchorPane.rightAnchor="200.0" />
+      <Button fx:id="fileButton" layoutX="200.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#openFile" prefHeight="52.0" prefWidth="119.0" stylesheets="@CSS/button.css" text="Play a MIDI" AnchorPane.leftAnchor="200.0" />
+   </children>
+</AnchorPane>
